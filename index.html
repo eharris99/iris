@@ -1,58 +1,158 @@
-<!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="header">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/logo.svg" width="180" height="34">
+            </div>
+            <div class="pull-right">
+              <ul>
+                <li>Log in</li>
+                <li>
+                  <a href="#" class="btn btn-default">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-<head>
-<meta charset="utf-8">
-<title>Hello...</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-</style>
-</head>
+        <div class="main">
+          <h1>Watch your favorite movies, instantly.</h1>
+          <a class="btn btn-default" href="#">Learn More</a>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search" placeholder="Browse the collection">
+            </div>
+            <button type="submit" class="btn btn-submit">Search</button>
+          </form>          
+        </div>
+      </div>
+    </div>
 
-<body>
-<div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
-</div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-myButton.addEventListener('click', doSomething, false)
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-</script>
+    <div class="supporting">
+      <div class="container">
+        <h2>A world of movies at your fingertips.</h2>
+        <p>Choose from the latest titles, with new movies added every day.</p>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="thumbnail">
+              <!-- The Avengers -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/the-avengers.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- Harry Potter and the Deathly Hallows -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/harry-potter.jpg">
+            </div>
+          </div>
+        </div>
 
-</body>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- Frozen -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/frozen.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- Iron Man 3 -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/iron-man.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- Transformers: Dark of the Moon -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/transformers.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- The Lord of the Rings -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/the-lord-of-the-rings.jpg">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="thumbnail">
+              <!-- Skyfall -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/skyfall.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- The Dark Knight Rises -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/the-dark-knight.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- Pirates of the Caribbean -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/pirates-of-the-caribbean.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <!-- Toy Story 3 -->
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/toy-story-3.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="container">
+        <h1>Available everywhere</h1>
+        <p>Start watching on one device, and pick up where you left off on another device.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Bolt</h3>
+            <ul>
+              <li>Careers</li>
+              <li>Terms</li>
+              <li>Help</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>More Bolt</h3>
+            <ul>
+              <li>Gift Cards</li>
+              <li>Trailers</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>News</h3>
+            <ul>
+              <li>Blog</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+              <li>Google+</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
