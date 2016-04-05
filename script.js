@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('img').draggable();
 });
 
-var Item=new Object();
+/*var Item=new Object();
 var redHat=new Item();
 
 var glasses = document.getElementById("glasses");
@@ -25,5 +25,5 @@ function getPixels(img)
     img.onload = null;
 }
 
-#3A9E1E
+#3A9E1E*/
 
