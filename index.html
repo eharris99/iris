@@ -1,13 +1,28 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+     <!--This is the bootstrap CDN link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <!--Link to site's CSS file. **Must** come after bootstrap CDN CSS to override CDN CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title> Iris Apfel Home</title>
   </head>
+  
+  
+  
   <body>
-    <nav class="navbar navbar-default">
+    
+    <!--Navbar begins -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,52 +32,52 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">IRIS APFEL</a>
+      <a class="navbar-brand" style="color:#CD0000" href="./index.html">IRIS APFEL</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://www.dazeddigital.com/fashion/article/15038/1/duffy-on-iris-apfels-sculptural-headpieces">Wigs <span class="sr-only">(current)</span></a></li>
-        <li><a href="http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR5.TRC2.A0.H0.Xiris+apfel.TRS0&_nkw=iris+apfel&_sacat=0">ebay</a></li>
+        
+        <li class="active"><a href="./about.html"> About<span class="sr-only"></span></a></li>
+        <li><a href="./calendar.html"> Calendar<span class="sr-only"></span></a></li>
+        
+        <li><a href="./blog.html">Blog</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.hsn.com/shop/rara-avis-by-iris-apfel/8564">HSN</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Iris Apfel Sites <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://www.hsn.com/shop/rara-avis-by-iris-apfel/8564" target="_blank">HSN</a></li>
+              <li><a href="http://www.dazeddigital.com/fashion/article/15038/1/duffy-on-iris-apfels-sculptural-headpieces" target="_blank">Wigs</a></li>
+              <li><a href="http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR5.TRC2.A0.H0.Xiris+apfel.TRS0&_nkw=iris+apfel&_sacat=0" target="_blank">ebay</a></li>
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      
+      <!--Navbar Search box begins-->
+      <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form><!--Navbar Search box form end-->
+      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Email Us</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
           </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div><!-- Ending div for the navbar-collapse -->
+  </div><!-- Ending div for the navbar container-fluid -->
 </nav>
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" margin="0">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -72,23 +87,38 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="./images/home.jpg" alt="Chania" width="100%">
+  <div class="carousel-inner"  role="listbox">
+    <div class="item active" >
+      <div class="fill" style="background-image:url('./images/irissmiling.jpg')"; background-position:"left center">
+            <div class="carousel-caption">
+              <h2>Iris with Parrot</h2>
+            </div>
     </div>
+</div>
+<div class="item">
+      <div class="fill" style="background-image:url('./images/home.jpg'); background-position:left center">
+            <div class="carousel-caption">
+              <h2>Iris with Bear</h2>
+            </div>
+    </div>
+</div>
+<div class="item">
+      <div class="fill" style="background-image:url('./images/irisbooks.jpg'); background-position:80% 50%">
+            <div class="carousel-caption">
+              <h2>Iris with Books</h2>
+            </div>
+      
+    </div>
+</div>
+<div class="item" >
+      <div class="fill" style="background-image:url('./images/iristable.jpg')">
+            <div class="carousel-caption">
+              <h2>Iris with Friends</h2>
+            </div>
+      
+    </div>
+</div>
 
-    <div class="item">
-      <img src="./images/irisbig.jpeg" alt="Chania" width="100%">
-    </div>
-
-    <div class="item">
-      <img src="./images/irisbooks.jpg" alt="Flower" width="100%">
-    </div>
-
-    <div class="item">
-      <img src="./images/iristable.jpg" alt="Flower" width="100%">
-    </div>
-  </div>
 
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -100,6 +130,12 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
+<!--Commenting out this pics so main page is just the image carousel. 
+Also not sure if we have enough matching <div> and </divs>
+
 
     <div class="container">
     
@@ -123,7 +159,7 @@
              <img src="./images/ladybrooch.png" height="200px" width="400">
              </div>
              <div>
-              <img src="./images/redhat.jpg" height="200" width="150px">
+              <img src="./images/redhat.jpg" z-index="-1" height="200" width="150px">
               </div>
           
         </div>
@@ -142,14 +178,23 @@
     
     <div class="jumbotron">
       <div class="container">
-        
+        <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:396px;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/513508500" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:150.000000% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/513508500?et=0ru82-VzTt5XHmkCYWb4Eg&viewMoreLink=on&sig=BFiCwOkGeC3M_P9evCBzcNOgCKgDPu0_eBAg1rp9xwE=&caption=true" width="396" height="594" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div><p style="margin:0;"></p></div>
         
             </div>
             </div>
+            -->
             
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            
+  <!--jquery.js CDN. **Must** come before the bootstrap.js. Bootstrap.js relies on jQuery to work-->
+            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+  <!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    
+ <!--link to our own js with the .draggable function plus whatever else i decided to add-->
   <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

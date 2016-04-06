@@ -1,3 +1,8 @@
+nav {
+    margin:0 !important;
+    height:50px;
+}
+
 .irismain {
     text-align:center;
     float:right;
@@ -9,15 +14,79 @@
 
 }
 
+h2 {
+    margin:0;
+}
+
 .accessories {
     width:100%;
     height:400px;
     
 }
 
+html,body{
+   height:100%;
+}
+
+.carousel {
+    margin:0 !important;
+height: 100%;
+}
+
+#myCarousel,
+.item,
+.active {
+    height: 100%;
+    
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    margin-top:3px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
 .accessories img {
-  
-z-index:1;
-position:relative;
-float:left;
+    z-index:1;
+    position:relative;
+    float:left;
+}
+
+
+/*#logo {*/
+/*    margin-top:0px;*/
+/*    text-align:center;*/
+/*    color:#CD0000;*/
+/*}*/
+
+/*h1 {*/
+ 
+/*    font-family: Arial;*/
+/*    font-size:40px;   */
+/*    margin:0;*/
+
+/*}*/
+
+/* Class to make responsive embed video not take up full screen*/
+.container-vid {
+  width: 700px;
+}
+
+/* Class for the about page jumbotron*/
+.jumbotron-about {
+    height: 100px;
+    padding-bottom: 0;
 }
