@@ -72,13 +72,13 @@ height: 100%;
 /*    color:#CD0000;*/
 /*}*/
 
-/*h1 {*/
+h2 {
  
-/*    font-family: Arial;*/
-/*    font-size:40px;   */
-/*    margin:0;*/
+    font-family: Arial;
+    font-size:40px;   
+    margin:0;
 
-/*}*/
+}
 
 /* Class to make responsive embed video not take up full screen*/
 .container-vid {
@@ -87,6 +87,7 @@ height: 100%;
 
 /* Class for the about page jumbotron*/
 .jumbotron-about {
-    height: 100px;
-    padding-bottom: 0;
+    height: 100%;
+    margin:0;
+    padding:0;
 }
