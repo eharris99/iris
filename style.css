@@ -9,9 +9,15 @@ nav {
 }
 
 .irismain img {
-    margin-top:40px;
+    margin-top: 40px;
     position:relative;
+width: 200px;
+    height: auto;
+}
 
+#bill {
+    width: 100px;
+    height: auto;
 }
 
 h2 {

@@ -13,14 +13,11 @@
     
     <!--Link to site's CSS file. **Must** come after bootstrap CDN CSS to override CDN CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
-        
-    <title> About Iris Apfel</title>
-    </head>
     
-    
-<body>
-<!--Navbar begins -->
-    <nav class="navbar navbar-default navbar-main navbar-fixed-top">
+    <title> Subway day with Iris</title>
+  </head>
+    <body>
+         <nav class="navbar navbar-default navbar-main navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -32,13 +29,11 @@
       </button>
       <a class="navbar-brand" style="color:#CD0000" href="./index.html">IRIS APFEL</a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
         <li class="active"><a href="./about.html"> About<span class="sr-only"></span></a></li>
-       <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
+        <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
         <li><a href="./blog.html">Blog</a></li>
         <li class="dropdown">
@@ -73,40 +68,30 @@
     </div><!-- Ending div for the navbar-collapse -->
   </div><!-- Ending div for the navbar container-fluid -->
 </nav>
-    <div class="jumbotron jumbotron-about">
-    <div class="container" style="text-align:center">
-        <h2 style="margin-top:50px">About Iris Apfel</h2>
-        <!--<p> This is a page to be filled with a brief bio of Iris Apfel. </p>-->
-        <!--<p> Information will be taken from Wikipedia and other sources, i.e Ari Seth Cohen's book "Advanced Style</p>-->
-    <!--Bootstrap code to create responsive embed video-->
-        <div class="container container-vid">
-        <div class col="cols-xs6 col-md-6 col-lg-6">
-        <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ocoQ-hVFNac">
-        </iframe>
-        </div>
-        </div>
-        </div>
-         </div>
+<div id="subway" style="background:url('./images/subway.jpg') no-repeat center center; width:100%; height:1200px">
+    
+     <div class="container">
+              <div class="irismain">
+              <img src="./images/iriscroptransparent.png" width="400" height="400">
+              </div>
+              <!--<div >-->
+              <!--<img src="./images/metmuseum.jpg" width="200px" height="auto">-->
+              <!--</div>-->
+              <div class="irismain">
+              <img src="./images/billcunninghamburned.png" width="400" height="400" id="bill">
+              </div>
+              
+              </div>
 </div>
 
-
-
-
-
-
-
- <!--jquery.js CDN. **Must** come before the bootstrap.js. Bootstrap.js relies on jQuery to work-->
-            
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     
   <!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
     
- <!--What is this???-->
+ <!--link to our own js with the .draggable function plus whatever else i decided to add-->
   <script type="text/javascript" src="script.js"></script>
-  
-</body>
+    </body>
 </html>
