@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -14,10 +14,12 @@
     <!--Link to site's CSS file. **Must** come after bootstrap CDN CSS to override CDN CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
     
-    <title> Subway day with Iris</title>
-  </head>
-    <body>
-         <nav class="navbar navbar-default navbar-main navbar-fixed-top">
+    
+        <title>Iris's Textile Houses </title>
+    </head>
+    <body  style="background:url(./images/textile7.jpg)" height="100%" width="100%""> 
+     <!--Navbar begins -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -29,13 +31,16 @@
       </button>
       <a class="navbar-brand" style="color:#CD0000" href="./index.html">IRIS APFEL</a>
     </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
         <li class="active"><a href="./about.html"> About<span class="sr-only"></span></a></li>
         <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
         <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./textiles.html">Iris's Favorite Textile Houses</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Iris Apfel Sites <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -56,45 +61,43 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Email Us</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- Ending div for the navbar-collapse -->
   </div><!-- Ending div for the navbar container-fluid -->
 </nav>
-
-<div  width="100%" height="1200px" style="background: url('./images/subway.jpg') no-repeat center center; width:100%; height:1200px">
-    <div class="irismain" style="z-index:1;">
-              <img src="./images/iriscroptransparent.png" width="400" height="400">
-              </div>
-              <!--<div >-->
-              <!--<img src="./images/metmuseum.jpg" width="200px" height="auto">-->
-              <!--</div>-->
-              <div class="irismain">
-              <img src="./images/billcunninghamburned.png" width="400" height="400" id="bill">
-              </div>
-</div>
-
+<div class="container">
+<div >
+    <div class="header" style="text-align:center; margin-top:50px;">
+        <h1 style="color:white; font-size:40px; font-family:Arial">Iris's Favorite Textile Houses</h1>
+    </div>
     
-              
-              </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <div class="row ">
+            <div class="col-md-4" style="background:url(./images/textile1_z.jpg)">
+            <a href="http://www.lelievre.eu/" target="_blank"><h2>LeLievre</h2></a>
+                
+            </div>
+            <div class="col-md-4" style="background:url(./images/textile2.jpg)">
+                <img class="img-responsive" src="./images/textile2.jpg">
+            </div>
+            <div class="col-md-4" style="background:url(./images/textile3.jpg)">
+                <img class="img-responsive" src="./images/textile3.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="background:url(./images/textile4.jpg)">
+                <img class="img-responsive" src="./images/textile4.jpg">
+            </div>
+            <div class="col-md-4" style="background:url(./images/textile5.jpg)">
+                <img class="img-responsive" src="./images/textile5.jpg">
+            </div>
+            <div class="col-md-4" style="background:url(./images/textile6.jpg)">
+                <img class="img-responsive" src="./images/textile6.jpg">
+            </div>
+        </div>
+    </div>
     
-  <!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-    
- <!--link to our own js with the .draggable function plus whatever else i decided to add-->
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="http://intridea.github.io/sketch.js/lib/sketch.min.js"></script>
+</div><!--end container-->
     </body>
 </html>
