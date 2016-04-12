@@ -50,17 +50,15 @@
               
               <li><a href="https://www.starkcarpet.com/catalogsearch/result/?q=old+world+weavers" target="_blank">Old World Weavers at Stark</a></li>
               <li><a href="http://thepeakofchic.blogspot.com/2015/09/old-world-weavers.html" target="_blank">Vintage Old World Weavers Ads</a></li>
+          <li><a href="https://www.pinterest.com/search/pins/?q=iris%20apfel&rs=typed&0=iris%7Ctyped&1=apfel%7Ctyped" target="_blank">Pinterest Pins on Iris</a></li>
+          <li><a href="https://www.instagram.com/iris.apfel/?hl=en" target="_blank">Iris' Instagram</a></li>
+              <li><a href="https://www.eyebobs.com/eyewear/?collections%5B%5D=eyebobs+by+Iris+Apfel&visible%5B%5D=on" target="_blank">Iris' Sunglasses Line</a></li>
+              <li><a href="http://uedata.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dbeauty&field-keywords=iris+apfel" target="_blank">Iris' MAC Cosmetics Line</a></li>
+              <li><a href="http://www.magpictures.com/iris/" target="_blank">Albert Mayles' Iris Documentary</a></li>
           </ul>
         </li>
       </ul>
       
-      <!--Navbar Search box begins-->
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form><!--Navbar Search box form end-->
       
       <ul class="nav navbar-nav navbar-right">
         <li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>
@@ -71,44 +69,33 @@
   </div><!-- Ending div for the navbar container-fluid -->
 </nav>
 
-<div class= "gallery">   <!--* http://www.jqueryscript.net/ for free jquery plugins-->   
-        <ul class="grids balancer">
-  <li>
-    <h4>Lorem ipsum dolor sit amet</h4>
-    <p><img src="http://placehold.it/960x411" alt=""></p>
-    <p>IRIS INSPIRED OUTFIT IDEAS</p>
-  </li>
-  <li>
-    <h4>IRIS'S FASHION</h4>
-    <p><img src="http://placehold.it/960x411" alt=""></p>
-    <p>Lorem ipsum dolor sit amet</p>
-  </li>
-  <li>
-    <h4>Lorem ipsum dolor sit amet</h4>
-    <p><img src="http://placehold.it/350x150" alt=""></p>
-    <p>Lorem ipsum dolor sit amet</p>
-  </li>
-  <li>
-    <h4>Lorem ipsum dolor sit amet</h4>
-    <p><img src="http://placehold.it/350x150" alt=""></p>
-    <p>Lorem ipsum dolor sit amet</p>
-  </li>
-</ul>
+<!-- Pinterest like grid http://www.jqueryscript.net/layout/Pinterest-Like-Responsive-Dynamic-Grid-Layout-Plugin-Pinto.html -->
+<div id="blogcontainer">
 
-<script src="bower_components/jquery/jquery.js"></script> // jQuery library
-<script src="scripts/jquery.layout.balancer.js"></script>
-<script>
-    $(document).ready(function(){
+  <!-- These are our grid blocks -->
+  <div>
+    <img src="images/blog/frenchwoman medium.jpg">
+    <h3>Dress Like Iris</h3>
+      <div>
+    <img src="images/blog/dubai-shoes.jpg">
+    <h3>Iris Inspired Shoes</h3>
+  </div>
+      <div>
+    <img src="images/blog/froglife2.jpg">
+    <h3>Live like Iris</h3>
+  </div>
+  </div>
+  <div>
+    <img src="images/blog/jewelry-red.jpg">
+    <h3>Iris Inspired Jewelry</h3>
+  </div>
 
-        $('.balancer').layoutBalancer({
-            columns: 3 /* Number of columns in the gallery */
-        });
 
-    });
-    
-    
-    
-</script>
+  ..
+
+</div>
+
+
         
         
   <!--jquery.js CDN. **Must** come before the bootstrap.js. Bootstrap.js relies on jQuery to work-->
@@ -126,8 +113,10 @@
   $(".nav").find(".active").removeClass("active");
   $(this).parent().addClass("active");
 });
-
-    
   </script>
+  
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="pinto.js"></script>
+
     </body>
 </html>

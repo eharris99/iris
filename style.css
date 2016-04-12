@@ -4,9 +4,18 @@
     margin-bottom:20px;
 }
 
+.container-viewport {
+    height:100vh;
+    width:100vw;
+}
+
 .irismain {
     text-align:center;
     float:right;
+}
+
+body {
+    text-align:center;
 }
 
 .irismain img {
@@ -24,6 +33,7 @@ width: 200px;
 
 h2 {
     margin:0;
+    color:#f51400;
 }
 
 .accessories {
@@ -55,6 +65,7 @@ height: 100%;
 /* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
+    
     margin-top:50px;
     width: 100%;
     height: 100%;
@@ -78,13 +89,14 @@ height: 100%;
 /*    text-align:center;*/
 /*    color:#CD0000;*/
 /*}*/
+/*we need to change this h2 to a more specific h2*/
 
 h2 {
  
     font-family: Arial;
     font-size:40px;   
     margin:0;
-
+    color:#F51400;
 }
 
 /* Class to make responsive embed video not take up full screen*/
@@ -99,31 +111,61 @@ h2 {
     padding:0;
 }
 
+/*End Jumbotron-about page info*/
+
 .col-md-4 {
- height:250px;   
+ height:200px;   
+ width:300px;
  z-index:1;
  margin-top:10px;
- 
  text-align:center;
- color:#fff;
-}
-
-.col-md-4 img {
- height:250px;   
- margin-left:10px;
+ margin-left:70px;
 }
 
 .row {
- height:200px;   
+    
+    margin:0 auto;
 }
+
 
 .col-md-4 h2  {
     margin-top:100px;
-    color:white;
+    color:green;
     z-index:1;
 }
 
 h2:hover,a:hover {
     text-decoration: none;
     color:green;
+}
+
+
+/* Blog CSS*/
+#blogcontainer {
+  width: 100%;
+  margin: auto;
+}
+
+#blogcontainer > div {
+  -webkit-box-shadow: 0 4px 15px -5px #555;
+  box-shadow: 0 4px 15px -5px #555;
+  background-color: #fff;
+  width: 500px;
+  padding: 2px;
+  margin: 5px;
+}
+
+#blogcontainer > div img {
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+
+/* End Blog css */
+
+
+/* Contact Form css */
+.col-md-4-cf h2 {
+    text-align: center;
+    color: orange;
 }

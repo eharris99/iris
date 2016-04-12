@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,11 @@
     <!--Link to site's CSS file. **Must** come after bootstrap CDN CSS to override CDN CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
     
-    <title> Subway day with Iris</title>
+    <title> Contact Us Form</title>
   </head>
-    <body>
-         <!--Navbar begins -->
+  
+      
+    <!--Navbar begins -->
     <nav class="navbar navbar-default navbar-main navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,7 +37,7 @@
       <ul class="nav navbar-nav">
         
         <li><a href="./about.html"> About<span class="sr-only"></span></a></li>
-        <li class="active"><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
+        <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./textiles.html">Iris's Favorite Textile Houses</a></li>
@@ -49,60 +50,92 @@
               
               <li><a href="https://www.starkcarpet.com/catalogsearch/result/?q=old+world+weavers" target="_blank">Old World Weavers at Stark</a></li>
               <li><a href="http://thepeakofchic.blogspot.com/2015/09/old-world-weavers.html" target="_blank">Vintage Old World Weavers Ads</a></li>
-          <li><a href="https://www.pinterest.com/search/pins/?q=iris%20apfel&rs=typed&0=iris%7Ctyped&1=apfel%7Ctyped" target="_blank">Pinterest Pins on Iris</a></li>
-          <li><a href="https://www.instagram.com/iris.apfel/?hl=en" target="_blank">Iris' Instagram</a></li>
-              <li><a href="https://www.eyebobs.com/eyewear/?collections%5B%5D=eyebobs+by+Iris+Apfel&visible%5B%5D=on" target="_blank">Iris' Sunglasses Line</a></li>
-              <li><a href="http://uedata.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dbeauty&field-keywords=iris+apfel" target="_blank">Iris' MAC Cosmetics Line</a></li>
-              <li><a href="http://www.magpictures.com/iris/" target="_blank">Albert Mayles' Iris Documentary</a></li>
+              <li><a href="https://www.pinterest.com/search/pins/?q=iris%20apfel&rs=typed&0=iris%7Ctyped&1=apfel%7Ctyped" target="_blank">Pinterest Pins on Iris</a></li>
+              
           </ul>
         </li>
       </ul>
-      
-
-      
-      <ul class="nav navbar-nav navbar-right">
-       <li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>
+       <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="./contactusform.html">Contact Us</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- Ending div for the navbar-collapse -->
   </div><!-- Ending div for the navbar container-fluid -->
-</nav>
+</nav
 
-<div  width="100%" height="1200px" style="background: url('./images/subway.jpg') no-repeat center center; width:100%; height:1200px">
-    <div class="irismain" style="z-index:1;">
-              <img src="./images/iriscroptransparent.png" width="400" height="400">
-              </div>
-              <!--<div >-->
-              <!--<img src="./images/metmuseum.jpg" width="200px" height="auto">-->
-              <!--</div>-->
-              <div class="irismain">
-              <img src="./images/billcunninghamburned.png" width="400" height="400" id="bill">
-              </div>
+  
+  <body>
+
+<!--FORM begins-->
+
+ 
+ <div class="container">
+    <div class="row-fluid">
+    <div class="col-md-offset-4 col-md-4" id="form-box">
+    <h2>Contact Us!</h2>
+    <hr>
+    <form class="form-horizontal" action=" " method="" id="contact_form">
+    <fieldset>
+    </div><!-- Form Name -->
+
+
+    <!-- Text input-->
+
+    
+    <div class="form-group">
+         <div class="col-md-12">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="first_name" placeholder="Name" class="form-control" type="text">
+            </div>
+        </div>
+     </div>
+
+<!-- Text input-->
+    <div class="form-group">
+        <div class="col-lg-12">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+            </div>
+        </div>
+    </div>
+
+<!-- Text input-->
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone" placeholder="(555)501-120101" class="form-control" type="text">
+    </div>
+                                            </div>
+                                        </div>
+<!-- Text input-->
+
+    <div class="form-group">
+     <div class="col-md-12 inputGroupContainer">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                    <textarea class="form-control" name="comment" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                    </div> 
 </div>
 
-    
-              
-              </div>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    
-  <!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-    
- <!--link to our own js with the .draggable function plus whatever else i decided to add-->
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="http://intridea.github.io/sketch.js/lib/sketch.min.js"></script>
-    <script>
-    $( document ).on( 'click', '.nav-list li', function ( e ) {
-    $( this ).addClass( 'active' ).siblings().removeClass( 'active' );
-} );
 
-    
-  </script>
     </body>
-    
 </html>
