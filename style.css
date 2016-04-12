@@ -1,4 +1,4 @@
-navbar {
+.navbar {
     clear:bottom;
     height:50px;
     margin-bottom:20px;
@@ -120,16 +120,17 @@ h2 {
 
 .col-md-4 img {
  height:250px;   
- 
+ margin-left:10px;
 }
 
 .row {
  height:250px;   
 }
 
-.col-md-4 h2 {
+.col-md-4 h2  {
     margin-top:100px;
     color:white;
+    z-index:1;
 }
 
 h2:hover,a:hover {
