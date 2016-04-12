@@ -4,6 +4,13 @@ $(document).ready(function(){
     $('img').draggable();
 });
 
+// $(".nav a").on("click", function(){
+//   $(".nav").find(".active").removeClass("active");
+//   $(this).parent().addClass("active");
+// });
+
+
+
 /*var Item=new Object();
 var redHat=new Item();
 

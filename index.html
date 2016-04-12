@@ -143,5 +143,13 @@
  <!--link to our own js with the .draggable function plus whatever else i decided to add-->
  <script type="text/javascript" src="http://intridea.github.io/sketch.js/lib/sketch.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script>
+    $(".nav a").on("click", function(){
+  $(".nav").find(".active").removeClass("active");
+  $(this).parent().addClass("active");
+});
+
+    
+  </script>
   </body>
 </html>
