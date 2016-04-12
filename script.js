@@ -8,6 +8,14 @@ $(document).ready(function(){
 //   $(".nav").find(".active").removeClass("active");
 //   $(this).parent().addClass("active");
 // });
+function sendMail() {
+    var link = "mailto:irisfans@gmail.com"
+             + "&subject=" + escape("I like Iris too")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
+
+    window.location.href = link;
+}
 
 
 
