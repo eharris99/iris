@@ -1,4 +1,4 @@
-.navbar {
+.navbar-main {
     clear:bottom;
     height:50px;
     margin-bottom:20px;
@@ -31,10 +31,7 @@ width: 200px;
     height: auto;
 }
 
-h2 {
-    margin:0;
-    color:#f51400;
-}
+
 
 .accessories {
     width:100%;
@@ -63,9 +60,9 @@ height: 100%;
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
+/* Didn't Cira say we cannot have inline CSS? */
 
 .fill {
-    
     margin-top:50px;
     width: 100%;
     height: 100%;
@@ -76,7 +73,6 @@ height: 100%;
     -o-background-size: cover;
 }
 
-
 .accessories img {
     z-index:1;
     position:relative;
@@ -84,13 +80,17 @@ height: 100%;
 }
 
 
-/*#logo {*/
-/*    margin-top:0px;*/
-/*    text-align:center;*/
-/*    color:#CD0000;*/
-/*}*/
-/*we need to change this h2 to a more specific h2*/
+/*
+#logo {
+   margin-top:0px;
+   text-align:center;
+   color:#CD0000;
+}*/
 
+
+
+
+/*These need to be named unique names so it won't interfere with other pgs using these elements*/
 h2 {
  
     font-family: Arial;
@@ -99,20 +99,20 @@ h2 {
     color:#F51400;
 }
 
-/* Class to make responsive embed video not take up full screen*/
-.container-vid {
-  width: 700px;
-}
+/*#quotes{*/
+/*	position: relative;*/
+/*	top: 30px;*/
+/*	left: 25px;*/
+/*	font-family: 'Amatic SC', monospace;*/
+/*	font-size: 96px;*/
+/*	color: #009;*/
+/*}*/
 
-/* Class for the about page jumbotron*/
-.jumbotron-about {
-    height: 100%;
+/* There are 2 h2 css codes - not sure what these are for */
+h2 {
     margin:0;
-    padding:0;
+    color:#f51400;
 }
-
-/*End Jumbotron-about page info*/
-
 .col-md-4 {
  height:200px;   
  width:300px;
@@ -123,14 +123,11 @@ h2 {
 }
 
 .row {
-    
     margin:0 auto;
 }
-
-
 .col-md-4 h2  {
     margin-top:100px;
-    color:green;
+    color:#6BC9F2;
     z-index:1;
 }
 
@@ -138,6 +135,11 @@ h2:hover,a:hover {
     text-decoration: none;
     color:green;
 }
+
+.content { width:100%; height:100%; margin:0;  
+}
+/*End message about needing to make unique named elements so they won't interfere with other pgs using these elements*/
+
 
 
 /* Blog CSS*/
@@ -169,3 +171,20 @@ h2:hover,a:hover {
     text-align: center;
     color: orange;
 }
+/* End Form css */
+
+/* About page css */
+/* Class to make responsive embed video not take up full screen*/
+.container-vid {
+  width: 700px;
+}
+
+/* Class for the About page jumbotron*/
+.jumbotron-about {
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color:orange;
+}
+/*End Jumbotron-about page info*/
+/* End of about page css */
