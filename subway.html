@@ -73,13 +73,14 @@
 
 <div  width="100%" height="1200px" style="background: url('./images/subway.jpg') no-repeat center center; width:100%; height:1200px">
     <div class="irismain" style="z-index:1;">
-              <img src="./images/iriscroptransparent.png" width="400" height="400">
+              <img id="iris" src="./images/iriscroptransparent.png" width="400" height="400">
               </div>
               <!--<div >-->
               <!--<img src="./images/metmuseum.jpg" width="200px" height="auto">-->
               <!--</div>-->
               <div class="irismain">
-              <img src="./images/billcunninghamburned.png" width="400" height="400" id="bill">
+              <img id="bill" src="./images/billcunninghamburned.png" width="400" height="400" id="bill">
+              <button class="btn default" id="button">Click to make them race!</button>
               </div>
 </div>
 
@@ -102,9 +103,51 @@
     $( document ).on( 'click', '.nav-list li', function ( e ) {
     $( this ).addClass( 'active' ).siblings().removeClass( 'active' );
 } );
+</script>
+<script type="text/javascript" src="animate.js"></script>
+<script>
+$(document).ready(function() {
+$(document).keydown(function(key) {
+switch(parseInt(key.which,10)) {
+case 65://a
+$('#bill').animate({left: "-=10px"}, 'fast');
+break;
+case 83://s
+$('#bill').animate({top: "+=10px"}, 'fast');
+break;
+case 87://w
+$('#bill').animate({top: "-=10px"}, 'fast');
+break;
+case 68://d
+$('#bill').animate({left: "+=10px"}, 'fast');
+break;
+}
+});
+});
 
-    
-  </script>
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+			// Left arrow key pressed
+			case 37:
+				$('#iris').animate({left: "-=10px"}, 'fast');
+				break;
+			// Up Arrow Pressed
+			case 38:
+				$('#iris').animate({top: "-=10px"}, 'fast');
+				break;
+			// Right Arrow Pressed
+			case 39:
+			$('#iris').animate({left: "+=10px"}, 'fast');
+				break;
+			// Down Array Pressed
+			case 40:
+				$('#iris').animate({top: "+=10px"}, 'fast');
+				break;
+		}
+	});
+});
+</script>
     </body>
     
 </html>
