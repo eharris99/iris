@@ -144,6 +144,14 @@ $(document).ready(function() {
 		}
 	});
 });
+
+
+$('#button').click(function(){
+  var places=["Met Museum Costume Institute 82nd and Fifth", "Astoria, Queens, Iris' birthplace", "New York Times Building, 43rd and 8th", "7th Avenue Garment District", "Kate Spade Store, Broome & Mercer", "JFK Airport","Armory, Park Avenue and 64th","Bryant Park Fashion Tents"];
+var randplace=places[Math.round(Math.random()*(places.length-1))];
+  alert(randplace);
+});
+
 </script>
     </body>
     
