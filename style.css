@@ -188,3 +188,13 @@ h2:hover,a:hover {
 }
 /*End Jumbotron-about page info*/
 /* End of about page css */
+
+
+       @media (max-width: 800px) {
+            
+            .navbar li {
+                
+                background-color:#F0F8FF;
+            }
+       }
+ 
