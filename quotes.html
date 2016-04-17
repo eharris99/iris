@@ -40,21 +40,7 @@ h1 {
 	margin-top:80px;
 }
 
-button {
-	margin-left: 105px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 15px;
-	font-family: 'Russo One', sans-serif;
-	font-size: 28px;
-	color: #4e4e55;
-	text-decoration: none;
-	cursor: pointer;
-	background-color: #ddd;
-	border: 3px solid #555;
-	height: 60px;
-	width: 200px;
-}
+
 
 button:hover{
 	opacity: .75;
@@ -123,24 +109,19 @@ a{
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" style="color:#FF7C33" href="./index.html">IRIS APFEL</a>
+      <a class="navbar-brand" style="color:#CD0000" href="./index.html">IRIS APFEL</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
-        <li ><a href="./about.html"> About<span class="sr-only"></span></a></li>
-        <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
+        <li><a href="./about.html"> About<span class="sr-only"></span></a></li>
+        <li class="active"><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
         <li><a href="./blog.html">Blog</a></li>
         <li ><a href="./textiles.html">Iris's Favorite Shopping in Paris</a></li>
-        <li class="active"><a href="./quotes.html">Iris Quotes</a></li>
-        
-        
-        
-        
-        
+        <li><a href="./quotes.html">Iris Quotes</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Iris Apfel Sites <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -150,34 +131,26 @@ a{
               
               <li><a href="https://www.starkcarpet.com/catalogsearch/result/?q=old+world+weavers" target="_blank">Old World Weavers at Stark</a></li>
               <li><a href="http://thepeakofchic.blogspot.com/2015/09/old-world-weavers.html" target="_blank">Vintage Old World Weavers Ads</a></li>
-              <li><a href="https://www.pinterest.com/search/pins/?q=iris%20apfel&rs=typed&0=iris%7Ctyped&1=apfel%7Ctyped" target="_blank">Pinterest Pins on Iris</a></li>
-              <li><a href="https://www.instagram.com/iris.apfel/?hl=en" target="_blank">Iris' Instagram</a></li>
+          <li><a href="https://www.pinterest.com/search/pins/?q=iris%20apfel&rs=typed&0=iris%7Ctyped&1=apfel%7Ctyped" target="_blank">Pinterest Pins on Iris</a></li>
+          <li><a href="https://www.instagram.com/iris.apfel/?hl=en" target="_blank">Iris' Instagram</a></li>
               <li><a href="https://www.eyebobs.com/eyewear/?collections%5B%5D=eyebobs+by+Iris+Apfel&visible%5B%5D=on" target="_blank">Iris' Sunglasses Line</a></li>
               <li><a href="http://uedata.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dbeauty&field-keywords=iris+apfel" target="_blank">Iris' MAC Cosmetics Line</a></li>
               <li><a href="http://www.magpictures.com/iris/" target="_blank">Albert Mayles' Iris Documentary</a></li>
-              
-            <li><a href="http://www.lebonmarche.com/evenements/iris-in-paris.html" target="_blank">Iris' Line at Le Bon Marche Paris</a></li>
-              <li><a href="http://blog.wisewear.com/articles/a-new-era-of-wearables-with-iris-apfel/" target="_blank">Iris & Tech Jewelry that Makes Distress Calls</a></li>
-               <li><a href="https://www.youtube.com/watch?v=5NjlVaNphlk" target="_blank">Iris's Citroen Ad</a></li>
-               <li><a href="https://www.tane.com.mx/" target="_blank">Tane's Iris Collection</a></li>
-               <li><a href="http://www.metmuseum.org/exhibitions/listings/2005/iris-barrel-apfel" target="_blank">Metropolitan Museum Costume Institute Show</a></li>
-               <li><a href="https://www.youtube.com/watch?v=hyZAHmxEcTo" target="_blank">Prof. Iris Apfel of UT in NYC</a></li>
+          <li><a href="http://www.lebonmarche.com/evenements/iris-in-paris.html" target="_blank">Iris' Line at Le Bon Marche Paris</a></li>
+          <li><a href="http://blog.wisewear.com/articles/a-new-era-of-wearables-with-iris-apfel/" target="_blank">Iris & Tech Jewelry that Makes Distress Calls</a></li>
+           <li><a href="https://www.youtube.com/watch?v=5NjlVaNphlk" target="_blank">Iris's Citroen Ad</a></li>
+           
+           <li><a href="http://www.metmuseum.org/exhibitions/listings/2005/iris-barrel-apfel" target="_blank">Metropolitan Museum Costume Institute Show</a></li>
+          <li><a href="https://www.youtube.com/watch?v=hyZAHmxEcTo" target="_blank">Prof. Iris Apfel of UT in NYC</a></li>
           </ul>
         </li>
       </ul>
       
-          
+
       
-      <!--Navbar Search box begins
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form><!--Navbar Search box form end-->
-      
-      <ul class="nav navbar-nav navbar-mail navbar-right">
-        <li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Contact Us</button></li>
+       <li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>
           </ul>
         </li>
       </ul>
@@ -224,6 +197,88 @@ a{
 
     </div>
     </div>
+    
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-offset-4 col-md-4" id="form-box">
+    <h2>Contact Us!</h2>
+    <hr>
+    <form class="form-horizontal" action=" " method="" id="contact_form">
+    <fieldset>
+    </div><!-- Form Name -->
+
+
+    <!-- Text input-->
+
+    
+    <div class="form-group">
+         <div class="col-md-12">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="first_name" placeholder="Name" class="form-control" type="text">
+            </div>
+        </div>
+     </div>
+
+<!-- Text input-->
+    <div class="form-group">
+        <div class="col-lg-12">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+            </div>
+        </div>
+    </div>
+
+<!-- Text input-->
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone" placeholder="(555)501-120101" class="form-control" type="text">
+    </div>
+                                            </div>
+                                        </div>
+<!-- Text input-->
+
+    <div class="form-group">
+     <div class="col-md-12 inputGroupContainer">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                    <textarea class="form-control" name="comment" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
