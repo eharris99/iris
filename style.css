@@ -184,7 +184,8 @@ h2:hover,a:hover {
     height: 100%;
     margin:0;
     padding:0;
-    background-color:orange;
+    background:url(./images/orangecloth.jpg) no-repeat center center;
+    background-size:cover;
 }
 /*End Jumbotron-about page info*/
 /* End of about page css */
