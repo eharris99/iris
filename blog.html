@@ -11,7 +11,34 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./jquery.pinto.min.js"></script>
         <title> Iris Apfel Blog </title>
+        <style>
+          
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+#container > div {
+  -webkit-box-shadow: 0 4px 15px -5px #555;
+  box-shadow: 0 4px 15px -5px #555;
+  background-color: #fff;
+  width: 220px;
+  padding: 2px;
+  margin: 5px;
+}
+
+#container > div img {
+  padding: 0px;
+  display: block;
+  width: 100%;
+
+}
+
+        </style>
     </head>
     
     <body>
@@ -78,22 +105,22 @@
 </nav>
 
 <!-- Pinterest like grid http://www.jqueryscript.net/layout/Pinterest-Like-Responsive-Dynamic-Grid-Layout-Plugin-Pinto.html -->
-<div id="blogcontainer">
+<div id="container" style="margin-top:60px">
 
   <!-- These are our grid blocks -->
-  <div>
+  <div class="pinto">
     <img src="images/blog/frenchwoman medium.jpg">
     <h3>Dress Like Iris</h3>
-      <div>
+    </div>
+  <div class="pinto">
     <img src="images/blog/dubai-shoes.jpg">
     <h3>Ten Iris Inspired Shoes</h3>
   </div>
-      <div>
+      <div class="pinto">
     <img src="images/blog/froglife2.jpg">
     <h3>Living the Iris Life</h3>
   </div>
-  </div>
-  <div>
+  <div class="pinto">
     <img src="images/blog/jewelry-red.jpg">
     <h3>Iris Loves Jewelry</h3>
   </div>
@@ -189,8 +216,7 @@
         
   <!--jquery.js CDN. **Must** come before the bootstrap.js. Bootstrap.js relies on jQuery to work-->
         
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        
             
             
   <!--jquery.js CDN. **Must** come before the bootstrap.js. Bootstrap.js relies on jQuery to work-->
@@ -203,9 +229,47 @@
   $(this).parent().addClass("active");
 });
   </script>
+  <script>
+    
+   $('#container').pinto();
+  </script>
+<script>
   
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="pinto.js"></script>
+  $('#container').pinto({
+
+// a block identification key
+itemSelector: "> div", 
+
+// a class of items that will be skipped and not layouted
+itemSkipClass: "pinto-skip", 
+
+// the width of one grid block in pixels
+itemWidth: 220, 
+
+// the width spacing between blocks in pixels
+gapX: 10, 
+
+// the height spacing between blocks in pixels
+gapY: 10, 
+
+// a blocks alignment ("left", "right", "center")
+align: "left", 
+
+// adjust the block width to create optimal layout based on container size
+fitWidth: true, 
+
+// up<a href="http://www.jqueryscript.net/time-clock/">date</a> layout after browser is resized
+autoResize: true, 
+
+// time in milliseconds between browser resize and layout update
+resizeDelay: 50, 
+
+// fire after item layout complete
+onItemLayout: function($item, column, position) {}, 
+  
+});
+
+</script>  
 
     </body>
 </html>
