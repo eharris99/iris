@@ -61,7 +61,7 @@ height: 100%;
 
 /* Background images are set within the HTML using inline CSS, not here */
 /* Didn't Cira say we cannot have inline CSS? */
-
+/* i will move it all over --elise*/
 .fill {
     margin-top:50px;
     width: 100%;
