@@ -20,7 +20,7 @@
     
 <body style="overflow:hidden">
 <!--Navbar begins -->
-    <nav class="navbar navbar-default navbar-main navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top" style="background-color:#F2895A; opacity:0.9; padding:0 0 20px 0; background-size:cover">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -34,16 +34,16 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
       <ul class="nav navbar-nav">
         
-        <li class="active"><a href="./about.html"> About<span class="sr-only"></span></a></li>
-        <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
+        <li style="background:url(./images/sequins.jpg); background-size:cover;text-transform:uppercase"><a style="color:white" href="./about.html"> About<span class="sr-only"></span></a></li>
+        <li class="navbar-pink"><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
-        <li><a href="./blog.html">Blog</a></li>
-        <li ><a href="./textiles.html">Iris's Favorite Shopping in Paris</a></li>
-        <li><a href="./quotes.html">Iris Quotes</a></li>
-        <li class="dropdown">
+        <li class="navbar-plum"><a href="./blog.html">Blog</a></li>
+        <li class="navbar-pink"><a href="./textiles.html">Iris's Paris</a></li>
+        <li class="navbar-plum"><a href="./quotes.html">Iris Quotes</a></li>
+        <li class="navbar-pink dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Iris Apfel Sites <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="http://www.hsn.com/shop/rara-avis-by-iris-apfel/8564" target="_blank">Home Shopping Network</a></li>
@@ -58,41 +58,35 @@
               <li><a href="http://uedata.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Dbeauty&field-keywords=iris+apfel" target="_blank">Iris' MAC Cosmetics Line</a></li>
               <li><a href="http://www.magpictures.com/iris/" target="_blank">Albert Mayles' Iris Documentary</a></li>
               <li><a href="http://www.lebonmarche.com/evenements/iris-in-paris.html" target="_blank">Iris' Line at Le Bon Marche Paris</a></li>
-<li><a href="http://blog.wisewear.com/articles/a-new-era-of-wearables-with-iris-apfel/" target="_blank">Iris & Tech Jewelry that Makes Distress Calls</a></li>
- <li><a href="https://www.youtube.com/watch?v=5NjlVaNphlk" target="_blank">Iris's Citroen Ad</a></li>
- <li><a href="https://www.tane.com.mx/" target="_blank">Tane's Iris Collection</a></li>
+        <li><a href="http://blog.wisewear.com/articles/a-new-era-of-wearables-with-iris-apfel/" target="_blank">Iris & Tech Jewelry that Makes Distress Calls</a></li>
+         <li><a href="https://www.youtube.com/watch?v=5NjlVaNphlk" target="_blank">Iris's Citroen Ad</a></li>
+     <li><a href="https://www.tane.com.mx/" target="_blank">Tane's Iris Collection</a></li>
   <li><a href="http://www.metmuseum.org/exhibitions/listings/2005/iris-barrel-apfel" target="_blank">Metropolitan Museum Costume Institute Show</a></li>
   <li><a href="https://www.youtube.com/watch?v=hyZAHmxEcTo" target="_blank">Prof. Iris Apfel of UT in NYC</a></li>
           </ul>
         </li>
       </ul>
-      
-      <!--Navbar Search box begins--
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form><!--Navbar Search box form end-->
-      
+
       <ul class="nav navbar-nav navbar-right">
            <li data-toggle="modal" data-target="#myModal"><a href="#">Contact Us</a></li>
-        <li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>
+        
           </ul>
         </li>
       </ul>
     </div><!-- Ending div for the navbar-collapse -->
   </div><!-- Ending div for the navbar container-fluid -->
 </nav>
-    <div class="jumbotron jumbotron-about">
-    <div class="container" style="text-align:center">
-        <h2 style="margin-top:50px">About Iris Apfel</h2>
+    <div class="jumbotron jumbotron-about" style="margin-top:50px;border-top:2px solid black;">
+    <div class="container-about">
+        <h2 style="margin-top:20px; color:#8B008B">About Iris Apfel</h2>
         
         
         
-        <!--<p> This is a page to be filled with a brief bio of Iris Apfel. </p>-->
-        <!--<p> Information will be taken from Wikipedia and other sources, i.e Ari Seth Cohen's book "Advanced Style</p>-->
-    <!--Bootstrap code to create responsive embed video-->
+        <!--This is a page to be filled with a brief bio of Iris Apfel. </p>-->
+        <!--Information will be taken from Wikipedia and other sources, i.e Ari Seth Cohen's book "Advanced Style</p>-->
+        
+        
+<!--Bootstrap code to create responsive embed video-->
         <div class="container container-vid">
         <div class col="cols-xs6 col-md-6 col-lg-6">
         <div class="embed-responsive embed-responsive-4by3">
@@ -107,44 +101,42 @@
 
 
 
-<!-- Modal -->
+<!-- Contact Us Modal Start -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
-    <!-- Modal content-->
+<!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <div class="col-md-offset-4 col-md-4" id="form-box">
-    <h2>Contact Us!</h2>
-    <hr>
+    <div class="modal-header">
+    <div class="modal-body">
+    
+    <div class="col-md-4" id="form-box">
+    <h2>Share your Iris love <i class="glyphicon glyphicon-heart"></i></h2>
     <form class="form-horizontal" action=" " method="" id="contact_form">
+    
+    
     <fieldset>
+    </div>
     </div><!-- Form Name -->
 
 
-    <!-- Text input-->
-
-    
+<!-- Text input-->
     <div class="form-group">
-         <div class="col-md-12">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input name="first_name" placeholder="Name" class="form-control" type="text">
-            </div>
+        <div class="col-md-12">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="first_name" placeholder="Name" class="form-control" type="text">
         </div>
-     </div>
+         </div>
+    </div>
 
 <!-- Text input-->
     <div class="form-group">
         <div class="col-lg-12">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-            </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="Email" class="form-control" type="text">
+        </div>
         </div>
     </div>
 
@@ -152,32 +144,32 @@
 
     <div class="form-group">
         <div class="col-md-12">
-            <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-            <input name="phone" placeholder="(555)501-120101" class="form-control" type="text">
-    </div>
-                                            </div>
-                                        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+            <input name="phone" placeholder="Phone Number" class="form-control" type="text">
+        </div>
+        </div>
+</div>
+
 <!-- Text input-->
 
     <div class="form-group">
-     <div class="col-md-12 inputGroupContainer">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                                    <textarea class="form-control" name="comment" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-
-                                            <div class="col-md-12">
-                                                <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
-                                            </div>
-                                        </div>
-
-                                    </fieldset>
-                                </form>
+         <div class="col-md-12 inputGroupContainer">
+         <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="comment" placeholder="Tell us what you love about Iris"></textarea>
+            </div>
+           </div>
+           </div>
+           
+            <div class="form-group">
+        <div class="col-md-12">
+            <p>
+        <button type="submit" class="btn btn-success pull-right"> Send <span class="glyphicon glyphicon-send"></span></button></p>
+         </div>
+         </div>
+        </fieldset>
+        </form>
       </div>
       
       <div class="modal-footer">
