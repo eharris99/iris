@@ -10,6 +10,20 @@ input-group[text]{
     text-transform:uppercase;
 }
 
+.navbar-subway {
+  background-color:#94C9EE;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+ .navbar-paris {
+  background-color: #FF5659;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+
+
 /*.nav ul li anav {*/
 /*    color: #fff;*/
 /*}*/
@@ -58,10 +72,6 @@ input-group[text]{
 /* End of about page css */
 
 
-.container-viewport {
-    height:100vh;
-    width:100vw;
-}
 
 .irismain {
     text-align:center;
