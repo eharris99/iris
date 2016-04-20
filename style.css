@@ -1,36 +1,9 @@
-input-group[text]{
-    padding: 10px;
-    background-color: green;
+/* across app styling */
+
+body  {
+    
+overflow:hidden;
 }
-
-.navbar-main {
-    clear:bottom;
-    height:51px;
-    margin-bottom:10px;
-    text-transform:uppercase;
-}
-
-.navbar-subway {
-  background-color:#94C9EE;
-  background-image: none;
-  background-repeat: no-repeat;
- }
- 
- .navbar-paris {
-  background-color: #FF5659;
-  background-image: none;
-  background-repeat: no-repeat;
- }
- .navbar-quotes {
-  background-color: #FB1A3A;
-  background-image: none;
-  background-repeat: no-repeat;
- }
-
-
-/*.nav ul li anav {*/
-/*    color: #fff;*/
-/*}*/
 
 .navbar  {
    text-align:center;
@@ -42,7 +15,41 @@ input-group[text]{
     margin-left:60px;
 }
 
-/*Alternating Colors for Navbar */
+.navbar-main {
+    clear:bottom;
+    height:51px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.homepage-link {
+    
+   color:#CD0000 !important;
+}
+/*about page*/
+
+.about-active
+{
+    background:url(./images/sequins.jpg); background-size:cover;text-transform:uppercase;
+}
+
+.about-li-fontcolor {
+    color:white;
+}
+
+.about-h2 {
+    margin-top:20px; color:#8B008B;
+}
+
+.navbar-about {
+    
+    background-color:#F2895A; 
+    opacity:0.9; 
+    padding:0 0 20px 0; 
+    background-size:cover;
+}
+
+/*Alternating Colors for about Navbar tabs */
 .navbar-plum {
     background-color: #F08252;
 }
@@ -53,7 +60,6 @@ input-group[text]{
 }/*End of Alternating Colors for Navbar */
 
 
-/* About page CSS */
 /* Class to make responsive embed video not take up full screen*/
 .container-vid {
   width: 700px;
@@ -63,18 +69,69 @@ input-group[text]{
     text-align: center;
 }
 
-/* Class for the About page jumbotron*/
+
 .jumbotron-about {
     height: 100%;
     margin:0;
     padding:0;
     background:url(./images/orangecloth.jpg) no-repeat center center;
     background-size:cover;
+    margin-top:50px;border-top:2px solid black;
     
 }
-/*End Jumbotron-about page info*/
+
 /* End of about page css */
 
+/*contact us modal*/
+
+input-group[text]{
+    padding: 10px;
+    background-color: green;
+}
+
+.col-md-4-cf h2 {
+    text-align: center;
+    color: orange;
+}
+/* End contact us Form css */
+
+
+
+
+
+/*subway page*/
+
+.navbar-subway {
+  background-color:#94C9EE;
+  background-image: none;
+  background-repeat: no-repeat;
+  
+}
+
+#bill {
+    width: 100px;
+    height: auto;
+}
+
+/*paris page */
+ 
+ .navbar-paris {
+  background-color: #FF5659;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+ /* quotes page*/
+ 
+ .navbar-quotes {
+  background-color: #FB1A3A;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
+
+
+/*index or home page*/
 
 
 .irismain {
@@ -94,10 +151,7 @@ width: 200px;
     z-index:1;
 }
 
-#bill {
-    width: 100px;
-    height: auto;
-}
+
 
 
 
@@ -212,14 +266,9 @@ h2: hover, a:hover {
 /* End Blog css */
 
 
-/* Contact Form css */
-.col-md-4-cf h2 {
-    text-align: center;
-    color: orange;
-}
-/* End Form css */
 
 
+/*media queries*/
 
 
 @media (max-width: 768px) {

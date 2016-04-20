@@ -18,9 +18,9 @@
     </head>
     
     
-<body style="overflow:hidden">
+<body >
 <!--Navbar begins -->
-    <nav class="navbar navbar-default navbar-main navbar-fixed-top" style="background-color:#F2895A; opacity:0.9; padding:0 0 20px 0; background-size:cover">
+    <nav class="navbar navbar-about navbar-main navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -30,21 +30,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" style="color:#CD0000" href="./index.html">IRIS APFEL</a>
+      <a class="navbar-brand homepage-link"  href="./index.html">IRIS APFEL</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
       <ul class="nav navbar-nav">
         
-        <li style="background:url(./images/sequins.jpg); background-size:cover;text-transform:uppercase"><a style="color:white" href="./about.html"> About<span class="sr-only"></span></a></li>
-        <li class="navbar-pink"><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
+        <li class="about-active" ><a class="about-li-fontcolor" href="./about.html"> About<span class="sr-only"></span></a></li>
+        <li class="navbar-pink"><a class="about-li-fontcolor" href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
-        <li class="navbar-plum"><a href="./blog.html">Blog</a></li>
-        <li class="navbar-pink"><a href="./textiles.html">Iris's Paris</a></li>
-        <li class="navbar-plum"><a href="./quotes.html">Iris Quotes</a></li>
+        <li class="navbar-plum"><a class="about-li-fontcolor" href="./blog.html">Blog</a></li>
+        <li class="navbar-pink"><a class="about-li-fontcolor" href="./textiles.html">Iris's Paris</a></li>
+        <li class="navbar-plum"><a class="about-li-fontcolor" href="./quotes.html">Iris Quotes</a></li>
         <li class="navbar-pink dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Iris Apfel Sites <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle about-li-fontcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Iris Apfel Sites <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="http://www.hsn.com/shop/rara-avis-by-iris-apfel/8564" target="_blank">Home Shopping Network</a></li>
               <li><a href="http://www.dazeddigital.com/fashion/article/15038/1/duffy-on-iris-apfels-sculptural-headpieces" target="_blank">Iris in Chic Wigs</a></li>
@@ -68,7 +68,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-           <li data-toggle="modal" data-target="#myModal"><a href="#">Contact Us</a></li>
+           <li data-toggle="modal" data-target="#myModal"><a class="about-li-fontcolor" href="#">Contact Us</a></li>
         
           </ul>
         </li>
@@ -76,9 +76,9 @@
     </div><!-- Ending div for the navbar-collapse -->
   </div><!-- Ending div for the navbar container-fluid -->
 </nav>
-    <div class="jumbotron jumbotron-about" style="margin-top:50px;border-top:2px solid black;">
+    <div class="jumbotron jumbotron-about" >
     <div class="container-about">
-        <h2 style="margin-top:20px; color:#8B008B">About Iris Apfel</h2>
+        <h2 class="about-h2" >About Iris Apfel</h2>
         
         
         
@@ -190,16 +190,5 @@
   <!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
-    
- <!--What is this???-->
-  <script type="text/javascript" src="script.js"></script>
-  <script>
-    $(".nav a").on("click", function(){
-  $(".nav").find(".active").removeClass("active");
-  $(this).parent().addClass("active");
-});
-
-    
-  </script>
 </body>
 </html>
