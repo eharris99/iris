@@ -1,8 +1,12 @@
-/* across app styling */
+/* across site styling */
 
 body  {
     
 overflow:hidden;
+}
+
+.overflowshow {
+    overflow: scroll;
 }
 
 .navbar  {
@@ -113,13 +117,7 @@ input-group[text]{
     height: auto;
 }
 
-/*paris page */
- 
- .navbar-paris {
-  background-color: #FF5659;
-  background-image: none;
-  background-repeat: no-repeat;
- }
+
  
  /* quotes page*/
  
@@ -149,20 +147,6 @@ body {
 width: 200px;
     height: auto;
     z-index:1;
-}
-
-
-
-
-
-.accessories {
-    width:100%;
-    height:400px;
-    
-}
-
-html,body{
-   height:100%;
 }
 
 .carousel {
@@ -195,34 +179,173 @@ height: 100%;
     -o-background-size: cover;
 }
 
+
+
+.accessories {
+    width:100%;
+    height:400px;
+    
+}
+
+html,body{
+   height:100%;
+}
+
+
+
 .accessories img {
     z-index:1;
     position:relative;
     float:left;
 }
 
+/*quotes*/
+.h1quotes {
+	font-family:'Russo One', sans-serif;
+	font-size: 34px;
+	margin-left: 25px;
+	color: #4e4e55;
+	margin-top:80px;
+}
 
-h2 {
-    margin-top: 30px; 
+
+
+button:hover{
+	opacity: .75;
+}
+
+a{
+	color: #000;
+}
+
+/*Changed - Quotes now to right of picture background on page*/
+#quotes{
+	position: fixed;
+	right: 100px;
+  width: 400px;
+  margin: 0 auto;
+	font-family: 'Amatic SC', monospace;
+	font-size: 30px;
+	/*
+	top: 30px;
+	margin:0 auto;
+	color: #009;
+	width:85%;
+	text-align:center;
+	margin-top:-10px;*/
+}
+
+.quotesbody {
+    	/*background-color: #FFA500; Changed background to an image from a solid color*/
+	background-image: url("./images/irissketch.jpg");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	text-align:center;
+}
+.quotes {
+    position:relative;
+  display: none;
     color: #8B008B;
     font-family: Arial;
     font-size:30px;   
-    margin: 0 auto;
+    margin: 80 auto;
+  
 }
+
+@media (max-width: 600px) {
+            .row {
+                width:100%;
+            }
+            
+            
+            #quotes {
+              
+              margin:0 auto;
+              width:200px;
+              
+            }
+            body {
+              
+              background:url(./images/orangecloth.jpg) no-repeat center center;
+              background-size:cover;
+              overflow-y:auto;
+            }
+            
+        }
 
 h2: hover, a:hover {
     text-decoration: none;
     color:green;
     
 }
+
+/*textiles aka paris page*/
+
+/*paris page */
+
+.parisbody {
+    background:url(./images/textile6.jpg); 
+    background-size:cover; 
+    overflow:hidden; 
+    opacity:0.9;
+    text-align:center;
+}
+ 
+ .navbar-paris {
+  background-color: #FF5659;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+ .parisheader {
+     text-align:center; margin-top:50px;
+ }
+ 
+ .paris-h2 {
+     color:#6BC9F2; font-size:40px; font-family:Arial;
+ }
+
 .col-md-4 {
  height:200px;   
  width:300px;
  z-index:1;
  margin-top:5px;
+ margin-left:20px;
  text-align: center;
 
 }
+
+/*.row {*/
+    
+/*    margin-left:110px;*/
+/*}*/
+
+.container-paris {
+    margin: auto;
+    max-width:1000px;
+}
+
+
+ @media (max-width: 800px) {
+            
+            body {
+                
+                overflow:scroll;
+            }
+            .navbar li {
+                
+                background-color:#F0F8FF;
+            }
+            
+            
+            .col-md-4 {
+                margin:0;
+            width:100%;
+            }
+            
+        
+        
+        }
 
 
 .col-md-4 h2  {
@@ -231,13 +354,9 @@ h2: hover, a:hover {
     z-index:1;
 }
 
-.row {
-    margin:0 auto;
 
-}
 
-.content { width:100%; height:100%; margin:0;  
-}
+
 /*End message about needing to make unique named elements so they won't interfere with other pgs using these elements*/
 
 
