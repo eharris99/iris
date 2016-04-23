@@ -1,0 +1,73 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color:#044851;
+  margin-top:80px;
+}
+
+.navbar-game {
+  background-color:#67989A;
+}
+
+#button2 {
+  background-color:#044851;
+  margin-top:30px;
+  margin-left:150px;
+  position:relative;
+}
+
+
+
+.description {
+  height: 80px;
+  width: 500px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+
+p {
+  font-size:18px;
+  color:#044851;
+  
+}
+.swirl {
+  
+  background:url(./images/swirl.jpg);
+  background-size:cover;
+}
+
+.sideboard {
+  margin: 0px 0px 30px 0px; 
+  float:left;
+}
+
+.ladies {
+  margin: 0px 0px 30px 0px; 
+  float:right;
+  position:relative;
+}
+
+.container-racinggame {
+  text-align:center;
+}
+.racer_table {
+  position:relative;
+ 
+  margin: 20px auto;
+  border: solid 3px;
+}
+.racer_table td {
+  background-color: white;
+  height: 90px;
+  width: 90px;
+  text-align: center;
+}
+
+.racer_table td.active {
+  background-color: #003133;
+}
+
