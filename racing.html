@@ -130,88 +130,92 @@
   </tr>
 </table>
 
+<!-- Contact Us Modal Start -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<!-- Modal content-->
+    <div class="modal-content">
+    <div class="modal-header">
+    <div class="modal-body">
+    
+    <div class="col-md-4" id="form-box">
+    <h2>Share your Iris love <i class="glyphicon glyphicon-heart"></i></h2>
+    <form class="form-horizontal" action=" " method="" id="contact_form">
+    
+    
+    <fieldset>
+    </div>
+    </div><!-- Form Name -->
+
+
+<!-- Text input-->
+    <div class="form-group">
+        <div class="col-md-12">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="first_name" placeholder="Name" class="form-control" type="text">
+        </div>
+         </div>
+    </div>
+
+<!-- Text input-->
+    <div class="form-group">
+        <div class="col-lg-12">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="Email" class="form-control" type="text">
+        </div>
+        </div>
+    </div>
+
+<!-- Text input-->
+
+    <div class="form-group">
+        <div class="col-md-12">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+            <input name="phone" placeholder="Phone Number" class="form-control" type="text">
+        </div>
+        </div>
+</div>
+
+<!-- Text input-->
+
+    <div class="form-group">
+         <div class="col-md-12 inputGroupContainer">
+         <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="comment" placeholder="Tell us what you love about Iris"></textarea>
+            </div>
+           </div>
+           </div>
+           
+            <div class="form-group">
+        <div class="col-md-12">
+            <p>
+        <button type="submit" class="btn btn-success pull-right"> Send <span class="glyphicon glyphicon-send"></span></button></p>
+         </div>
+         </div>
+        </fieldset>
+        </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  
+  <script type="text/javascript" src="racing2.js"></script>
   <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="racing.js"></script>
- <script>
-  $('#button2').click(function(){
-    $('#player1_strip').find('td.active').removeClass('active');
-    $('#birthplace').addClass('active');
-  var birthplace=prompt("Where was Iris born?");
-  if (birthplace==="Astoria")  {
-   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-   alert("Click the blue square for your next question.");
-   }
-   else {
-   alert("Wrong answer. Click button to start over.");
-   }
-   
-  });
-  
-  $('#husband').click(function(){
-   
-  var husband=prompt("What was Iris's husband's first name?");
-  if (husband=="Carl") {
-   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-   alert("Right answer! Click the blue square for your next question.");
-  }
-    else  {
-
-alert("Wrong answer. Click button to start over.");
-$(this).addClass('active');
-    }
-  });
-  
-  $('#caviar').click(function(){
-  
-   var caviar=prompt("What is Iris's drug of choice?");
-  if (caviar=="Caviar")  {
-   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-   alert("Right answer! Click the blue square for your next question.");
-   } else {
-   alert("Wrong answer. Click button to start over.");
-   
-    }
-    });
-    
-    $('#job').click(function(){
-   
-   var job=prompt("What was Iris's profession?");
-  if (job=="Interior Decorator")  {
-   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-   alert("Right answer! Click the blue square for your next question.");
-    }
-    else {
-  alert("Wrong answer. Click button to start over.");
-    }
-  
-  });
-  
-  $('#stark').click(function(){
-   
-   var stark=prompt("Who bought Iris and Carl's company?");
-  if (stark=="Stark")  {
-   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-    alert("Right answer! Click the blue square for your next question.");
-  }
-    else {
-   alert("Wrong answer. Click button to start over.");
-    }
-  });
-  
-  $('#whitehouse').click(function(){
-   
-   var whitehouse=prompt("How many White House administrations did Iris work for?");
-  if (whitehouse=="9")  {
-   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-    alert("Right answer! You won the sideboard!");
-  }
-    else {
-   alert("Wrong answer. Click button to start over.");
-    }
-  });
-  
-</script>
+<!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
+</html>

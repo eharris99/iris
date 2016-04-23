@@ -1,41 +1,76 @@
-$(document).ready(function() {
-  var end_of_track = 15;
-  var players = [
-    {
-      id: 1,
-      position: 0,
-      keycode: 80,
-      css_locator: '#player1_strip'
-    },
-    {
-      id: 2,
-      position: 0,
-      keycode: 81,
-      css_locator: '#player2_strip'
+  $('#button2').click(function(){
+    $('#player1_strip').find('td.active').removeClass('active');
+    $('#birthplace').addClass('active');
+  var birthplace=prompt("Where was Iris born?");
+  if (birthplace==="Astoria")  {
+   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
+   alert("Click the blue square for your next question.");
+   }
+   else {
+   alert("Wrong answer. Click button to start over.");
+   }
+   
+  });
+  
+  $('#husband').click(function(){
+   
+  var husband=prompt("What was Iris's husband's first name?");
+  if (husband=="Carl") {
+   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
+   alert("Right answer! Click the blue square for your next question.");
+  }
+    else  {
+
+alert("Wrong answer. Click button to start over.");
+$(this).addClass('active');
     }
-  ];
-
-  function advancePlayer(player) {
-    players.forEach(function(player){
-      if (players[0].position < end_of_track) {
-        move_player(player.css_locator);
-        player.position++;
-        winner(player.position, player.id);
-      }
+  });
+  
+  $('#caviar').click(function(){
+  
+   var caviar=prompt("What is Iris's drug of choice?");
+  if (caviar=="Caviar")  {
+   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
+   alert("Right answer! Click the blue square for your next question.");
+   } else {
+   alert("Wrong answer. Click button to start over.");
+   
+    }
     });
+    
+    $('#job').click(function(){
+   
+   var job=prompt("What was Iris's profession?");
+  if (job=="Interior Decorator")  {
+   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
+   alert("Right answer! Click the blue square for your next question.");
+    }
+    else {
+  alert("Wrong answer. Click button to start over.");
+    }
+  
+  });
+  
+  $('#stark').click(function(){
+   
+   var stark=prompt("Who bought Iris and Carl's company?");
+  if (stark=="Stark")  {
+   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
+    alert("Right answer! Click the blue square for your next question.");
   }
-
-  // $(document).keyup(function(e) {
-  //   advancePlayer(e.keyCode);
-  // });
-});
-
-function move_player(strip) {
-  $(strip).find('td.active').removeClass('active').next().addClass('active');
-}
-
-function winner(player, num) {
-  if (player > 14) {
-    alert("Player " + num + " has won!");
+    else {
+   alert("Wrong answer. Click button to start over.");
+    }
+  });
+  
+  $('#whitehouse').click(function(){
+   
+   var whitehouse=prompt("How many White House administrations did Iris work for?");
+  if (whitehouse=="9")  {
+   $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
+    alert("Right answer! You won the sideboard!");
   }
-}
+    else {
+   alert("Wrong answer. Click button to start over.");
+    }
+  });
