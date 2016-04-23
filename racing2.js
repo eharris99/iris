@@ -40,18 +40,20 @@ $('#button2').click(function(){
   $('#player1_strip').find('td.active').removeClass('active');
   $('#birthplace').addClass('active');
     }
-   } else {
+   } 
+   else {
    alert("Wrong answer. Click button to start over.");
    $('#player1_strip').find('td.active').removeClass('active');
    $('#birthplace').addClass('active');
     }
   }
-  }
+  
     else  {
 
 alert("Wrong answer. Click button to start over.");
 $('#player1_strip').find('td.active').removeClass('active');
 $('#birthplace').addClass('active');
     }
+  }
 
 });
