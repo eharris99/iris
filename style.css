@@ -13,6 +13,10 @@ overflow:hidden;
    text-align:center;
     
 }
+.navbar-inverse .navbar-nav>li>a  {
+ color:#fff;
+  
+}
 
 .nav  {
     height:45px;
