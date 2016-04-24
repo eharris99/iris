@@ -419,6 +419,10 @@ h2: hover, a:hover {
                 
                 background-color:#F0F8FF;
             }
+            
+            .body-overflowhidden {
+                overflow-y: scroll;
+            }
        }
 
 
