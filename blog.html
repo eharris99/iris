@@ -14,45 +14,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="text.css" />
+    <link rel="stylesheet" type="text/css" href="./css/text.css" />
     
     <!--Link to site's CSS file. **Must** come after bootstrap CDN CSS to override CDN CSS-->
     <!--This is the ACTUAL CSS style sheet for the page. No INLINE CSS can be used-->
 <!--All inline CSS must be moved to this page-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-
-
-    
-    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="./jquery.pinto.min.js"></script>
+<script type="text/javascript" src="./js/jquery.pinto.min.js"></script>
         <title> Iris Apfel Blog </title>
-        <style>
-          
-#container {
-  width: 100%;
-  margin: auto;
-}
-
-#container > div {
-  -webkit-box-shadow: 0 4px 15px -5px #555;
-  box-shadow: 0 4px 15px -5px #555;
-  background-color: #fff;
-  width: 220px;
-  padding: 2px;
-  margin: 5px;
-}
-
-#container > div img {
-  padding: 0px;
-  display: block;
-  width: 100%;
-
-}
-
-        </style>
+        
     </head>
     
     <body class="overflowshow">
@@ -112,7 +84,6 @@
       
       <ul class="nav navbar-nav navbar-right">
             <li data-toggle="modal" data-target="#myModal"><a href="#">Contact Us</a></li>
-        <!--<li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>-->
           </ul>
         </li>
       </ul>
@@ -121,7 +92,7 @@
 </nav>
 
 <!-- Pinterest like grid http://www.jqueryscript.net/layout/Pinterest-Like-Responsive-Dynamic-Grid-Layout-Plugin-Pinto.html -->
-<div id="container" style="margin-top:60px">
+<div id="container">
 
   <!-- These are our grid blocks -->
   <div class="pinto">
@@ -328,16 +299,11 @@
             
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./js/script.js"></script>
-<script>
-    $(".nav a").on("click", function(){
-  $(".nav").find(".active").removeClass("active");
-  $(this).parent().addClass("active");
-});
-  </script>
+
   <script>
-    
    $('#container').pinto();
   </script>
+  
 <script>
   
   $('#container').pinto({
