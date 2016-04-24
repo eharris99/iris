@@ -38,7 +38,7 @@ overflow:hidden;
 
 .about-active
 {
-    background:url(./images/sequins.jpg); background-size:cover;text-transform:uppercase;
+    background:url(../images/sequins.jpg); background-size:cover;text-transform:uppercase;
 }
 
 .about-li-fontcolor {
@@ -80,15 +80,14 @@ overflow:hidden;
 }
 
 .aboutbody {
-    
     height: 100%;
-    background:url(./images/orangecloth.jpg) no-repeat center center;
+    background:url(../images/orangecloth.jpg) no-repeat center center;
     background-size:cover;
 }
 
 .jumbotron-about {
-     height: 100vh;
-    background:url(./images/orangecloth.jpg) no-repeat center center;
+    height: 100vh;
+    background:url(../images/orangecloth.jpg) no-repeat center center;
     background-size:cover;
 }
 
@@ -251,7 +250,7 @@ a{
 
 .quotesbody {
     	/*background-color: #FFA500; Changed background to an image from a solid color*/
-	background-image: url("./images/irissketch.jpg");
+	background-image: url("../images/irissketch.jpg");
 	background-size: 50%;
 	background-repeat: no-repeat;
 	text-align:center;
@@ -267,23 +266,21 @@ a{
 }
 
 @media (max-width: 600px) {
-            .row {
-                width:100%;
+     .row {
+       width:100%;
             }
             
-            
-            #quotes {
+     #quotes {
+        margin:0 auto;
+       width:200px;
               
-              margin:0 auto;
-              width:200px;
+      }
+      body {
               
-            }
-            body {
-              
-              background:url(./images/orangecloth.jpg) no-repeat center center;
-              background-size:cover;
-              overflow-y:auto;
-            }
+       background:url(../images/orangecloth.jpg) no-repeat center center;
+       background-size:cover;
+       overflow-y:auto;
+    }
             
         }
 
@@ -308,7 +305,7 @@ h2: hover, a:hover {
 }
 
 .parisbody {
-    background:url(./images/textile6.jpg); 
+    background:url(../images/textile6.jpg); 
     background-size:cover; 
     /*overflow:hidden; */
     opacity:0.9;
@@ -325,8 +322,10 @@ h2: hover, a:hover {
      text-align:center; margin-top:50px;
  }
  
- .paris-h2 {
-     color:#6BC9F2; font-size:40px; font-family:Arial;
+ .paris-h2, .col-md-4 h2 {
+     color:#6BC9F2; 
+     font-size:40px; 
+     font-family:Arial;
  }
 
 .col-md-4 {
@@ -372,7 +371,7 @@ h2: hover, a:hover {
         }
 
 
-.col-md-4 h2  {
+.col-md-4>h2  {
     margin-top:100px;
     color:#6BC9F2;
     z-index:1;
