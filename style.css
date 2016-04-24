@@ -83,9 +83,13 @@ overflow:hidden;
 }
 
 .jumbotron-about {
-     height: 100%;
+     height: 100vh;
     background:url(./images/orangecloth.jpg) no-repeat center center;
     background-size:cover;
+}
+
+.jumbotron {
+    margin:0;
 }
 
 /* End of about page css */
@@ -121,7 +125,9 @@ input-group[text]{
     height: auto;
 }
 
-
+.navbar-inverse a {
+    color:white;
+}
  
  /* quotes page*/
  
@@ -430,4 +436,3 @@ h2: hover, a:hover {
       display: block !important;
     }
 
-}

@@ -7,42 +7,47 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
      <!--This is the bootstrap CDN link-->
-   
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
     
     <!--Link to site's CSS file. **Must** come after bootstrap CDN CSS to override CDN CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
+     
+    
+   
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
     
     
+ <!--link to our own js with the .draggable function plus whatever else i decided to add-->
+ 
         <title>Iris's Paris </title>
     </head>
-    <body  class="parisbody" > 
+    <body  class="parisbody overflowshow" > 
     <div class="content" >
      <!--Navbar begins -->
-    <nav class="navbar navbar-paris navbar-main navbar-fixed-top">
+    <nav class="navbar navbar-main navbar-inverse navbar-paris navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="navbar-header ">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand homepage-link" href="./index.html">IRIS APFEL</a>
+      <a class="navbar-brand homepage-link"  href="./index.html">IRIS APFEL</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
-        <li ><a href="./about.html"> About<span class="sr-only"></span></a></li>
-        <li><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
+        <li><a href="./about.html"> About<span class="sr-only"></span></a></li>
+        <li ><a href="./subway.html"> Iris's NY<span class="sr-only"></span></a></li>
         
         <li><a href="./blog.html">Blog</a></li>
-        <li class="active"><a href="./textiles.html">Iris's Paris</a></li>
+        <li ><a href="./textiles.html">Iris's Paris</a></li>
         <li><a href="./quotes.html">Iris Quotes</a></li>
         <li><a href="./racing.html">Iris Game</a></li>
         <li class="dropdown">
@@ -62,19 +67,19 @@
               <li><a href="http://www.magpictures.com/iris/" target="_blank">Albert Mayles' Iris Documentary</a></li>
           <li><a href="http://www.ipreferparis.net/2016/03/iris-apfel-at-le-bon-marche.html" target="_blank">Iris' Show at Le Bon Marche Paris</a></li>
           <li><a href="http://blog.wisewear.com/articles/a-new-era-of-wearables-with-iris-apfel/" target="_blank">Iris & Tech Jewelry that Makes Distress Calls</a></li>
-          <li><a href="https://www.youtube.com/watch?v=5NjlVaNphlk" target="_blank">Iris's Citroen Ad</a></li>
-          <li><a href="https://www.tane.com.mx/" target="_blank">Tane's Iris Collection</a></li>
-           <li><a href="http://www.metmuseum.org/exhibitions/listings/2005/iris-barrel-apfel" target="_blank">Metropolitan Museum Costume Institute Show</a></li>
-           <li><a href="https://www.youtube.com/watch?v=hyZAHmxEcTo" target="_blank">Prof. Iris Apfel of UT in NYC</a></li>
+           <li><a href="https://www.youtube.com/watch?v=5NjlVaNphlk" target="_blank">Iris's Citroen Ad</a></li>
            
+           <li><a href="http://www.metmuseum.org/exhibitions/listings/2005/iris-barrel-apfel" target="_blank">Metropolitan Museum Costume Institute Show</a></li>
+          <li><a href="https://www.youtube.com/watch?v=hyZAHmxEcTo" target="_blank">Prof. Iris Apfel of UT in NYC</a></li>
           </ul>
         </li>
       </ul>
       
+
       
       <ul class="nav navbar-nav navbar-right">
-          <li data-toggle="modal" data-target="#myModal"><a href="#">Contact Us</a></li>
-        <!--<li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>-->
+            <li data-toggle="modal" data-target="#myModal"><a href="#">Contact Us</a></li>
+       <!--<li href="mailto:irisapfelfans@gmail.com"><a href="mailto:irisapfelfans@gmail.com">Email Us</a></li>-->
           </ul>
         </li>
       </ul>
@@ -205,16 +210,18 @@
   </div>
 </div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     
     
   <!--bootstrap.js CDN scrip link. **MUST come at end just befor body closing tag-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
+    <script type="text/javascript" src="./script.js"></script>
     
  <!--link to our own js with the .draggable function plus whatever else i decided to add-->
  <script type="text/javascript" src="http://intridea.github.io/sketch.js/lib/sketch.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+ 
 
     </body>
 </html>
