@@ -120,7 +120,7 @@ input-group[text]{
 }
 
 
-.btn-subway {
+#buttonsubway {
     
     background-color:#AF1E9B;
 }
@@ -400,25 +400,25 @@ h2: hover, a:hover {
        
 
 
-@media(max-width:1000px)  {
+/*@media(max-width:1000px)  {*/
 
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
+/*    .navbar-collapse.collapse {*/
+/*        display: none !important;*/
+/*    }*/
 
-    .navbar-collapse {
-        overflow-x: visible !important;
-    }
+/*    .navbar-collapse {*/
+/*        overflow-x: visible !important;*/
+/*    }*/
 
-    .navbar-collapse.in {
-      overflow-y: auto !important;
-    }
+/*    .navbar-collapse.in {*/
+/*      overflow-y: auto !important;*/
+/*    }*/
 
-    .collapse.in {
-      display: block !important;
-    }
+/*    .collapse.in {*/
+/*      display: block !important;*/
+/*    }*/
 
-}
+/*}*/
 
 
 
