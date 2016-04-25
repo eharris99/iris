@@ -444,10 +444,10 @@ h2: hover, a:hover {
   
 }
 
-.about-active
-{
-    background:url(../images/sequins.jpg); background-size:cover;text-transform:uppercase;
-}
+/*.about-active*/
+/*{*/
+/*    background:url(../images/sequins.jpg); background-size:cover;text-transform:uppercase;*/
+/*}*/
 /*
 .navbar-inverse a {
     color:white;
