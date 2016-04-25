@@ -13,95 +13,62 @@ overflow:hidden;
    text-align:center;
     
 }
-.navbar-inverse .navbar-nav>li>a  {
- color:#fff;
-  
-}
-
-.navbar-inverse a {
-    color:white;
-}
-
-.nav  {
-    height:45px;
-    margin-left:60px;
-}
-
-.navbar-main {
-    clear:bottom;
-    height:51px;
-    margin-bottom:10px;
-    text-transform:uppercase;
-}
 
 .homepage-link {
     
    color:#CD0000 !important;
 }
-/*about page*/
 
-.about-active
-{
-    background:url(../images/sequins.jpg); background-size:cover;text-transform:uppercase;
+/* -- Why Does the whole site's Body have Text Align Center? ----*/
+body {
+    text-align:center;
 }
 
+/* --- Why is the whole site's HTML and BODY have specific CSS? 
+Additionally this is the 2nd Time that Body has been defined in CSS--*/
+html,body{
+   height:100%;
+}
+
+
+
+/* ----- ABOUT page CSS -------*/
+
+.jumbotron-about {
+    background-color: #49A5A2;
+}
 .about-li-fontcolor {
     color:white;
 }
 
-.about-h2 {
-    margin-top:20px; color:#8B008B;
-}
-
 .navbar-about {
+    background-color:#A5D19A;
+    font-size: 15px;
     
-    background-color:#F2895A; 
-    opacity:0.9; 
-    padding:0 0 20px 0; 
-    background-size:cover;
 }
 
-/*Alternating Colors for about Navbar tabs */
-.navbar-plum {
-    background-color: #F08252;
-}
-
-.navbar-pink {
-    background-color: #F06C63;
-    
-}/*End of Alternating Colors for Navbar */
-
-
-/* Class to make responsive embed video not take up full screen*/
+/* Class to make responsive embed video not take up full screen
 .container-vid {
-  width: 700px;
-}
 
+}*/
+ /*
 .container-about {
     margin-top:2px;
     text-align: center;
     border-top:2px solid black;
-}
+}*/
 
-.aboutbody {
-    height: 100%;
-    background:url(../images/orangecloth.jpg) no-repeat center center;
+.body-about {
+    background:url(../images/orangecloth.jpg);
     background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
+/*------- ABOUT page CSS End*/
 
-.jumbotron-about {
-    height: 100vh;
-    background:url(../images/orangecloth.jpg) no-repeat center center;
-    background-size:cover;
-}
-
-.jumbotron {
-    margin:0;
-}
-
-/* End of about page css */
-
-/*contact us modal*/
+/* ---- MODAL Contact US CSS Start ---------*/
 
 input-group[text]{
     padding: 10px;
@@ -112,13 +79,13 @@ input-group[text]{
     text-align: center;
     color: orange;
 }
-/* End contact us Form css */
+/* -------MODAL Contact Us CSS END ------ */
 
  
  
 
 
-/*subway or ny page*/
+/*------Subway/NY Page CSS START -------*/
 /*subway page*/
 
 .subwaymap {
@@ -157,9 +124,7 @@ input-group[text]{
     
     background-color:#AF1E9B;
 }
-body {
-    text-align:center;
-}
+
 
 .irismain img {
     margin-top: 40px;
@@ -173,7 +138,7 @@ width: 200px;
 
 .carousel {
     margin:0 !important;
-height: 100%;
+    height: 100%;
 }
 
 #myCarousel,
@@ -207,19 +172,13 @@ height: 100%;
     
 }
 
-html,body{
-   height:100%;
-}
-
-
-
 .accessories img {
     z-index:1;
     position:relative;
     float:left;
 }
 
-/*quotes*/
+/* ---- Quotes Page CSS Start ---*/
 .h1quotes {
 	font-family:'Russo One', sans-serif;
 	font-size: 34px;
@@ -228,9 +187,9 @@ html,body{
 	margin-top:80px;
 }
 
- 
- .navbar-quotes {
-  background-color: #FB1A3A;
+.navbar-quotes {
+  background-color: #11A391;
+  font:black;
   background-image: none;
   background-repeat: no-repeat;
  }
@@ -361,7 +320,7 @@ h2: hover, a:hover {
      text-align:center; margin-top:50px;
  }
  
- .paris-h2, .col-md-4 h2 {
+.paris-h2, .col-md-4 h2 {
      color:#6BC9F2; 
      font-size:40px; 
      font-family:Arial;
@@ -374,6 +333,7 @@ h2: hover, a:hover {
     font-size: 40px; 
 }
 
+/* ---- What is this for? If this is for a specific page it should have a uniqe name --*/
 .col-md-4 {
  height:200px;   
  width:300px;
@@ -384,10 +344,6 @@ h2: hover, a:hover {
 
 }
 
-/*.row {*/
-    
-/*    margin-left:110px;*/
-/*}*/
 
 .container-paris {
     margin: auto;
@@ -395,38 +351,6 @@ h2: hover, a:hover {
 }
 
 
- @media (max-width: 800px) {
-            
-            body {
-                
-                overflow:scroll;
-            }
-            .navbar li {
-                
-                background-color:#F0F8FF;
-            }
-            
-            
-            .col-md-4 {
-                margin:0;
-            width:100%;
-            }
-            
-        
-        
-        }
-
-
-/*.col-md-4>h2  {*/
-/*    margin-top:100px;*/
-/*    color:#6BC9F2;*/
-/*    z-index:1;*/
-/*}*/
-
-
-
-
-/*End message about needing to make unique named elements so they won't interfere with other pgs using these elements*/
 
 
 
@@ -457,29 +381,23 @@ h2: hover, a:hover {
 /* End Blog css */
 
 
-
-
 /*media queries*/
 
-
-@media (max-width: 768px) {
-.navbar li {
+@media (max-width: 500px) {
+            
+            body {
                 
-                background-color:#F0F8FF;
+                overflow-y:scroll;
             }
             
-            .body-overflowhidden {
-                overflow-y: scroll;
+            
+            .col-md-4 {
+                margin:0;
+            width:100%;
             }
+
        }
        
-        @media (max-width: 800px) {
-            
-            .navbar li {
-                
-                background-color:#F0F8FF;
-            }
-       }
 
 
 @media(max-width:1000px)  {
@@ -501,3 +419,33 @@ h2: hover, a:hover {
     }
 
 }
+
+
+
+
+
+.navbar-inverse .navbar-nav>li>a  {
+ color:#fff;
+  
+}
+
+.about-active
+{
+    background:url(../images/sequins.jpg); background-size:cover;text-transform:uppercase;
+}
+/*
+.navbar-inverse a {
+    color:white;
+}
+
+.nav  {
+    height:45px;
+    margin-left:60px;
+}
+
+.navbar-main {
+    height:51px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+*/
