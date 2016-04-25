@@ -26,7 +26,7 @@ $('#button2').click(function(){
     var whitehouse=prompt("How many White House administrations did Iris work for? Answer with a numeral.");
   if (whitehouse=="9")  {
    $('#player1_strip').find('td.active').removeClass('active').next().addClass('active');
-    alert("Right answer! You won the sideboard!");
+    alert("Right answer! You won the Borzoi!");
   }
     else {
    alert("Wrong answer. Click button to start over.");

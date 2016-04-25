@@ -30,6 +30,13 @@ html,body{
    height:100%;
 }
 
+.modalh2 {
+    color:#6BC9F2;
+     font-size:40px; 
+     font-family:Arial;
+     margin-top:50px;
+     
+}
 
 
 /* ----- ABOUT page CSS -------*/
@@ -278,8 +285,8 @@ h2: hover, a:hover {
     background:url(../images/textile3.jpg); z-index:1;
 }
 .edmondpetitpic {
-    
-    background:url(../images/textile4.jpg);
+    background-size:cover;
+    background:url(../images/weave.jpg);
 }
 .clignacourtpic {
     
@@ -288,7 +295,7 @@ h2: hover, a:hover {
 }
 .vanvespic {
     
-    background:url(../images/textile7.jpg);
+    background:url(../images/puces.jpg);
 }
 
 
@@ -312,19 +319,28 @@ h2: hover, a:hover {
  
  .navbar-paris {
   background-color: #FF5659;
-  background-image: none;
-  background-repeat: no-repeat;
+ 
  }
  
  .parisheader {
      text-align:center; margin-top:50px;
  }
  
-.paris-h2, .col-md-4 h2 {
-     color:#6BC9F2; 
+ .paris-h2 {
+     color:#fff;
      font-size:40px; 
      font-family:Arial;
      margin-top:50px;
+     
+ }
+ 
+.parish2 {
+     /*color:#6BC9F2; */
+     color:white;
+     font-size:40px; 
+     font-family:Arial;
+     margin-top:50px;
+     font-weight: bold;
  }
 
 .glyphicon-chevron-down {
@@ -374,7 +390,7 @@ h2: hover, a:hover {
 .container-blogtext p {
     color:	#424242;
 }
-}
+
 
 #container > div {
   -webkit-box-shadow: 0 4px 15px -5px #555;
