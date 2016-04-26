@@ -44,9 +44,6 @@ html,body{
 .jumbotron-about {
     background-color: #49A5A2;
 }
-.about-li-fontcolor {
-    color:white;
-}
 
 .navbar-about {
     background-color:#A5D19A;
@@ -54,16 +51,6 @@ html,body{
     
 }
 
-/* Class to make responsive embed video not take up full screen
-.container-vid {
-
-}*/
- /*
-.container-about {
-    margin-top:2px;
-    text-align: center;
-    border-top:2px solid black;
-}*/
 
 .body-about {
     background:url(../images/orangecloth.jpg);
@@ -423,7 +410,7 @@ h2: hover, a:hover {
             
             
             .col-md-4 {
-                margin:0;
+                margin:0 auto;
             width:100%;
             }
 
@@ -480,3 +467,33 @@ h2: hover, a:hover {
     text-transform:uppercase;
 }
 */
+
+@media (max-width:986px) {
+  
+  
+   body {
+    
+    overflow-y:scroll;
+  }
+  
+  
+.thumbnail {
+            /*width: 394px;*/
+            width: 100%;
+            height:400px;
+            display: block;
+            margin: 60px auto;
+        }
+ 
+  body {
+    
+    overflow-y:scroll;
+  }
+
+            .row {
+                margin-top: 0;
+          }
+            .img-responsive {
+                margin-bottom: 20px;
+            }
+}
