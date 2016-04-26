@@ -289,11 +289,15 @@ h2: hover, a:hover {
 
 .container-textiletext {
     margin:40px auto;
-    background-color:#7ACCEF;
+    background-color:#2B4B4C;
 }
 .textiletext {
-    color:#68100F;
+    color:white;
     line-height:40px;
+}
+
+.textiletext>a {
+    color:red;
 }
 
 .parisbody {
