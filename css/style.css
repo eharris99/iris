@@ -26,6 +26,7 @@ body {
 
 /* --- Why is the whole site's HTML and BODY have specific CSS? 
 Additionally this is the 2nd Time that Body has been defined in CSS--*/
+/*this was probably an experiment i did when i was trying to make the homepage fit to the viewport. obviously i found another solution later on. but regardless, i have seen css stylesheets that define body twice. when some css properties apply only to body but other css properties apply to both both and another html element, i have seen the same css selector used more than once. */
 html,body{
    height:100%;
 }
@@ -197,7 +198,7 @@ a{
 	color: #000;
 }
 
-/*Changed - Quotes now to right of picture background on page*/
+
 #quotes{
 	position: fixed;
 	right: 100px;
@@ -215,7 +216,7 @@ a{
 }
 
 .quotesbody {
-    	/*background-color: #FFA500; Changed background to an image from a solid color*/
+    	
 	background-image: url("../images/irissketch.jpg");
 	background-size: 50%;
 	background-repeat: no-repeat;
