@@ -288,7 +288,9 @@ h2: hover, a:hover {
 
 
 .container-textiletext {
-    margin:40px auto;
+    width:30%;
+    float:left;
+    margin-top:50px;
     background-color:#2B4B4C;
 }
 .textiletext {
@@ -297,7 +299,7 @@ h2: hover, a:hover {
 }
 
 .textiletext>a {
-    color:red;
+    color: red;
 }
 
 .parisbody {
@@ -306,8 +308,13 @@ h2: hover, a:hover {
     /*overflow:hidden; */
     opacity:0.9;
     text-align:center;
+    
 }
  
+ .parisoverall {
+     float:right;
+    width:70%;
+ }
  .navbar-paris {
   background-color: #FF5659;
  
@@ -340,10 +347,9 @@ h2: hover, a:hover {
     font-size: 40px; 
 }
 
-/* ---- What is this for? If this is for a specific page it should have a uniqe name --*/
-.col-md-4 {
- height:200px;   
- width:300px;
+.thumbnail {
+  height: 200px;
+    width: 280px;
  z-index:1;
  margin-top:5px;
  margin-left:20px;
