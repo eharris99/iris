@@ -242,7 +242,7 @@ a{
        width:200px;
               
       }
-      body {
+      .quotesbody {
               
        background-color:white;
        background-size:cover;
@@ -350,7 +350,7 @@ h2: hover, a:hover {
 
 .thumbnail {
   height: 200px;
-    width: 280px;
+    width: 24%;
  z-index:1;
  margin-top:5px;
  margin-left:20px;
@@ -387,6 +387,8 @@ h2: hover, a:hover {
 
 .container-blogtext p {
     color:	#424242;
+    margin-top:40px;
+    font-size:16px;
 }
 
 
@@ -479,7 +481,12 @@ h2: hover, a:hover {
 }
 */
 
-@media (max-width:986px) {
+@media (max-width:1000px) {
+    
+    .quotesbody {
+    	
+	background: white;
+    }
   
   
    body {
