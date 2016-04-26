@@ -243,9 +243,9 @@ a{
       }
       body {
               
-       background:url(../images/orangecloth.jpg) no-repeat center center;
+       background-color:white;
        background-size:cover;
-       overflow-y:auto;
+       overflow-y:scroll;
     }
             
         }
@@ -498,6 +498,11 @@ h2: hover, a:hover {
   body {
     
     overflow-y:scroll;
+  }
+  
+  .body-overflowhidden {
+      overflow-y:scroll;
+      
   }
 
             .row {
