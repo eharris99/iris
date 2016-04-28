@@ -499,21 +499,22 @@ h2: hover, a:hover {
 	background: white;
     }
   
+   #quotes {
+                float:right !important;
+  width: 300px;
+  text-align:right;
+            }
+  
+   .quotes{
+                float:right !important;
+                width:60%;
+                
+            }
   
    body {
     
     overflow-y:scroll;
   }
-  
-  #quotes {
-                width:100%;
-                text-align:center;
-                margin: 0 auto;
-            }
-            
- .quotes {
-     width:80%;
- }
             
   
 .thumbnail {
