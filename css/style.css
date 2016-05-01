@@ -449,7 +449,7 @@ h2: hover, a:hover {
                 width:80%;
           }
           
-          .body-overflowhidden {
+          .subwaymap {
               background-repeat:repeat-y;
               overflow-y:scroll;
           }
