@@ -452,6 +452,7 @@ h2: hover, a:hover {
           .subwaymap {
               background-repeat:repeat-y;
               overflow-y:scroll;
+              width:100%;
           }
 
  .description {
