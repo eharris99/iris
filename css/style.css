@@ -451,6 +451,7 @@ h2: hover, a:hover {
           
           .body-overflowhidden {
               background-repeat:repeat-y;
+              overflow-y:scroll;
           }
 
  .description {
