@@ -439,15 +439,23 @@ h2: hover, a:hover {
             }*/
             
             .thumbnail {
-            height:200px;
+            height:auto;
             display:block;
             margin:60px auto;
-            width:100%;
+            width:70%;
         }
         
 .row {
                 width:80%;
           }
+          
+          .body-overflowhidden {
+              background-repeat:repeat-y;
+          }
+
+ .description {
+            width:80%;    
+            }
 
        }
        
@@ -552,4 +560,9 @@ h2: hover, a:hover {
             .img-responsive {
                 margin-bottom: 20px;
             }
+            
+            .description {
+            width:80%;    
+            }
+            
 }
